@@ -3,7 +3,7 @@ import logging
 from logging.handlers import RotatingFileHandler
 
 
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "7609201330:AAH7Th6TxNp3SzT7QYdikbHHf9HR_d5olmE")
 API_ID = int(os.environ.get("API_ID", "16536417"))
 API_HASH = os.environ.get("API_HASH", "f6e58a549da642d7b765744a2f82c6d9")
 
@@ -14,17 +14,17 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "100"))
 
 OWNER_ID = int(os.environ.get("OWNER_ID", "921365334"))
 DB_URL = os.environ.get("DB_URL", "mongodb+srv://trumbot:trumbot@cluster0.cfkaeno.mongodb.net/?retryWrites=true&w=majority")
-DB_NAME = os.environ.get("DB_NAME", "tvshowtest1khhk")
+DB_NAME = os.environ.get("DB_NAME", "DumpTeam4xtest1khhk")
 
 
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002137320449"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002357111653"))
 FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "0"))
 FILE_AUTO_DELETE = int(os.getenv("FILE_AUTO_DELETE", "1800")) # auto delete in seconds
 
 
 try:
     ADMINS=[]
-    for x in (os.environ.get("ADMINS", "6177102464 1571060413 974706111 1562935405 5103171472 5075494391 5446648312 5614964062 563896360 974706111 5103171472 1562935405 921365334 5614964062").split()):
+    for x in (os.environ.get("ADMINS", "1802920344 2124253218 6177102464 1571060413 974706111 1562935405 5103171472 5075494391 5446648312 5614964062 563896360 974706111 5103171472 1562935405 921365334 5614964062").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
